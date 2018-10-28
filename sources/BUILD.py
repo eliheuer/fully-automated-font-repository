@@ -1,3 +1,4 @@
+import argparse
 import os
 import subprocess
 from fontTools.ttLib import TTFont
@@ -42,7 +43,7 @@ print("\n**** Run: gftools  **************************************\n")
 os.chdir("..")
 cwd = os.getcwd()
 print("     [+]In Directory:", cwd)
-# subprocess.call(['gftools', 'fix-dsgi', 'fonts/Foo-VF.ttf', '--autofix'])
+#subprocess.call(['gftools fix-dsgi', 'fonts/Foo-VF.ttf', '--autofix'])
 
 
 # FONTTOOLS
@@ -53,4 +54,4 @@ font = TTFont('fonts/Foo-VF.ttf')
 print(font)
 print("     [+] Done")
 
-
+subprocess.call('python3 docs/drawbot-sources/basic-specimen.py', shell=True)
