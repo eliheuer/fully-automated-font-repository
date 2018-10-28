@@ -1,14 +1,32 @@
 # RENDER WITH: http://www.drawbot.com/
+"""
+This file is part of the Fully Automated Font Repository distribution
+(https://github.com/eliheuer/fully-automated-font-repository).
+Copyright (c) 2018 Eli Heuer.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, version 3.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+"""
+
+
 from drawBot import *
 import math
 import os
 
 
 # STATIC VARIABLE
-# WIDTH, HEIGHT, MARGIN, FRAMES
-W,H,M,F = 1000,1000,100,30
-VAR_WGHT = 300
-LINE_H = H/10
+W,H,M,F = 1000,1000,100,30     # WIDTH, HEIGHT, MARGIN, FRAMES
+VAR_WGHT = 300                 # VARIABLE FONT WEIGHT
+LINE_H = H/10                  # LINE HEIGHT
 START_POS = 800-4
 
 
